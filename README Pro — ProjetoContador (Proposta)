@@ -1,0 +1,112 @@
+﻿# ProjetoContador
+
+Aplicativo de terminal em **Java** que lê dois números inteiros fornecidos pelo usuário e imprime uma sequência de contagem com base na diferença entre eles. Se o segundo número for menor ou igual ao primeiro, uma **exceção personalizada** é lançada com mensagem de erro apropriada.  
+O repositório atualmente não possui descrição ou README mais elaborado, e possui apenas uma classe com falta de documentação.  
+
+---
+
+##  Funcionalidades
+
+- Lê dois números inteiros via terminal.
+- Calcula a diferença entre o segundo e o primeiro número.
+- Imprime "Imprimindo o número X" para cada valor de 1 até a diferença.
+- Caso o segundo número seja menor ou igual ao primeiro, lança uma exceção personalizada (`ParametrosInvalidosException`) com mensagem: **"O segundo parâmetro deve ser maior que o primeiro"**.
+
+---
+
+##  Estrutura do Projeto
+
+ProjetoContador/
+├── Contador.java
+├── ParametrosInvalidosException.java (se existir)
+└── README.md (atualmente genérico)
+
+
+
+Yaml
+
+## ▶️ **Como executar**
+
+1. Certifique-se de ter o **Java Development Kit (JDK)** instalado.
+
+2. Clone o repositório ou baixe os arquivos.
+
+3. Acesse a pasta do projeto via terminal, e compile os arquivos:
+
+```bash
+javac Contador.java ParametrosInvalidosException.java
+
+
+
+##**Execute o programa:
+java Contador
+
+#O programa solicitará os dois parâmetros ao usuário. Exemplos:
+
+Digite o primeiro número:
+> 12
+Digite o segundo número:
+> 30
+Imprimindo o número 1
+Imprimindo o número 2
+...
+Imprimindo o número 18
+
+**Exemplo Inválido
+
+Digite o primeiro número:
+> 30
+Digite o segundo número:
+> 12
+O segundo parâmetro deve ser maior que o primeiro
+
+
+Melhorias Sugeridas
+
+Adicionar tratamento de exceções: garantir que entradas não-inteiras não quebrem o programa.
+
+Separação de responsabilidades: criar classes como Contador e ParametrosInvalidosException para organizar código, e uma classe Main com main() clara.
+
+Validação de parâmetros: verificar números negativos, valores iguais, etc.
+
+Formatação e instruções: melhorar a experiência do usuário com mensagens mais amigáveis e formatadas.
+
+Testes automatizados (JUnit): criar testes para lógica de contagem e tratamento de erros.
+
+Continuous Integration (CI): configurar GitHub Actions ou outro CI para compilar e testar automaticamente.
+
+Documentação adicional: adicionar seções como "Contribuindo", "Roadmap", "Licença".
+
+Roadmap (sugestão)
+
+ Refatorar estrutura: separar lógica e main().
+
+ Implementar tratamento de exceções robusto.
+
+ Adicionar testes unitários com JUnit.
+
+ Documentar o projeto (README, comentários, licenças).
+
+ Configurar CI/CD.
+
+Contribuindo
+
+Contribuições são bem-vindas! Siga estes passos:
+
+Fork no GitHub.
+
+Crie uma branch com sua feature: git checkout -b feature/nome-da-feature.
+
+Faça commit com mensagem padronizada (ex.: feat: adicionar validação de entrada).
+
+Faça push e abra um Pull Request.
+
+Autor
+
+Alexandre Mata Melo
+@meloalexandev
+
+Licença
+
+Nenhuma licença definida. Recomenda-se adicionar uma como MIT para facilitar o uso público.
+
